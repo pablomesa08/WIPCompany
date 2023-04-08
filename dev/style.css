@@ -1,0 +1,70 @@
+.inicio-title{
+    color: white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+}
+.inicio-title2{
+    color: white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.inicio-subtitle{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+}
+.inicio-titleArt{
+    color:gray;
+    font-size: 28pt;
+    font-family: 'Playfair Display', serif;
+}
+.pie{
+    color: #C1C1C1;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+}
+
+.cabeza{
+    color: white;
+    font-size: 26pt;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.art-inicio{
+    width: 360px;
+    height: 420px;
+    border-width: 5px;
+    border-color: #CC0298;
+    border-style: solid;
+    margin: 100px;
+}
+.land-image{
+    width: 1280px;
+    height: 597px;
+    margin: 10px 5px 5px 10px;
+}
+.personajes-im{
+    width: 375px;
+    height: 345px;
+    border-radius: 50%;
+}
+.head-p{
+    background-color: #9A09F7;
+}
+.first-ini{
+    background-color: #020100;
+    background-image:url("/Images/Articulo.PNG")
+}
+.second-ini{
+    background-color: #555E75;
+}
+.footer-ini{
+    background-color: #020100;
+}
+

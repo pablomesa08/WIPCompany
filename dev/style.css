@@ -2,6 +2,7 @@
     color: white;
     font-size: 56pt;
     font-family: 'Playfair Display', serif;
+    margin: 15px 10px 0px 15px ;
 }
 .inicio-title2{
     color: white;
@@ -13,11 +14,13 @@
     color: white;
     font-size: 20pt;
     font-family: 'Inter', sans-serif;
+    margin: 0px 10px 15px 15px;
 }
 .inicio-titleArt{
     color:gray;
     font-size: 28pt;
     font-family: 'Playfair Display', serif;
+    margin: 0px 10px 50px 5px;
 }
 .pie{
     color: #C1C1C1;
@@ -42,7 +45,6 @@
     border-width: 5px;
     border-color: #CC0298;
     border-style: solid;
-    margin: 100px;
 }
 .land-image{
     width: 1280px;
@@ -67,4 +69,12 @@
 .footer-ini{
     background-color: #020100;
 }
-
+hr{
+    height: 2px;
+    background-color: white;
+}
+.col-articulosIni{
+    column-count: 3;
+    column-gap: 5px;
+    text-align: center;
+}

@@ -5,19 +5,17 @@ body{
     font-family: 'Oswald', sans-serif;
     height: 100vh;
 }
-
 .box{
     width:420px;
-    height: 520px;
+    height: 680px;
     background-color: black;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
-
 .im{
     width: 100px;
     height: 100px;
@@ -26,48 +24,41 @@ body{
     top: -50px;
     left: calc(50% - 50px);
 }
-
 h1{
     margin: 0;
-    padding: 0 0 15px;
+    padding: 0 0 10px;
     text-align: center;
-    font-size: 28pt;
+    font-size: 22pt;
     color:white;
 }
 label{
     margin: 0;
     padding: 0;
-    font-size: 20pt;
+    font-size: 14pt;
     display: block;
     color: white;
 }
-input {
+.input1{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+}
+.input2{
+    margin-bottom: 10px;
 }
 input[type="text"], input[type="password"]{
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
     outline: none;
-    height: 30px;
+    height: 20px;
     color: white;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 input[type="submit"]{
     border: none;
     outline: none;
-    height: 40px;
+    height: 30px;
     background-color: #CC0298;
-    font-size: 18pt;
+    font-size: 12pt;
     border-radius: 20px;
-}
-a{
-    text-decoration: none;
-    font-size: 14pt;
-    line-height: 30px;
-    color: white;
-}
-a:hover{
-    color:darkgray;
 }

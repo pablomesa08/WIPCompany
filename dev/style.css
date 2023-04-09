@@ -61,8 +61,12 @@
 }
 .first-ini{
     background-color: #020100;
-    background-image:url("/Images/Articulo.PNG")
+    background-image:url("/Images/Articulo.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 597px;
 }
+
 .second-ini{
     background-color: #555E75;
 }
@@ -70,11 +74,38 @@
     background-color: #020100;
 }
 hr{
-    height: 2px;
+    height: 5px;
     background-color: white;
 }
 .col-articulosIni{
     column-count: 3;
     column-gap: 5px;
+    text-align: center;
+}
+.banner-ningiri{
+    background-image: url(/images/Ningiri.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.texto-nin{
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 330px; 
+    left: 20px;
+}
+.pie-prod{
+    color: #342D2D;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+}
+.col-personajes{
+    column-count: 3;
+    column-gap: 10px;
+    text-align: center;
+}
+.banner-personajes{
     text-align: center;
 }

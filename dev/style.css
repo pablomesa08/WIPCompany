@@ -60,13 +60,11 @@
     background-color: #9A09F7;
 }
 .first-ini{
-    background-color: #020100;
-    background-image:url("/Images/Articulo.PNG");
+    background-image: url(/images/Articulo.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     height: 597px;
 }
-
 .second-ini{
     background-color: #555E75;
 }
@@ -79,7 +77,7 @@ hr{
 }
 .col-articulosIni{
     column-count: 3;
-    column-gap: 5px;
+    column-gap: 40px;
     text-align: center;
 }
 .banner-ningiri{
@@ -91,9 +89,10 @@ hr{
 .texto-nin{
     font-size: 56pt;
     font-family: 'Playfair Display', serif;
-    position: relative;
-    top: 330px; 
-    left: 20px;
+    position: absolute;
+    top: 400px; 
+    left: 50px;
+    opacity: 0.6;
 }
 .pie-prod{
     color: #342D2D;
@@ -104,9 +103,6 @@ hr{
 .col-personajes{
     column-count: 3;
     column-gap: 10px;
-    text-align: center;
-}
-.banner-personajes{
     text-align: center;
 }
 .button-ini{
@@ -120,4 +116,48 @@ hr{
     left: 50px;
     top: 100px;
     padding: 15px 30px;
+}
+.button-nin{
+    background-color: #CC0298;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 18pt;
+    color: white;
+    position: absolute;
+    left: 70px;
+    top: 670px;
+    padding: 15px 20px;
+}
+.personajes-title1{
+    text-align: center;
+    font-size: 63pt;
+    font-family: 'Playfair Display', serif;
+    margin: 15px 15px 15px 15px;
+}
+.personajes-title2{
+    font-size: 28pt;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 15px 15px 25px 15px;
+}
+.texto-per{
+    color:white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    margin: 5px 10px 15px 10px;
+}
+.p-per{
+    color: white;
+    font-size: 22pt;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+    margin: 10px 15px 5px 15px;
+}
+.art-2{
+    background-image: url(/images/Articulo2.PNG);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    height: 597px;
 }

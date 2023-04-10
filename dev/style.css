@@ -109,3 +109,15 @@ hr{
 .banner-personajes{
     text-align: center;
 }
+.button-ini{
+    background-color: #CC0298;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 20pt;
+    color: white;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    padding: 15px 30px;
+}

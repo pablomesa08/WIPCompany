@@ -161,3 +161,14 @@ hr{
     background-size: 85%;
     height: 597px;
 }
+.tit-art2{
+    color: white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+
+}
+.sub-art2{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+}

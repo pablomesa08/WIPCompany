@@ -1,111 +1,84 @@
-.inicio-title{
-    color: white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    margin: 15px 10px 0px 15px ;
+.div-cabeza{
+    background-color: #9A09F7;
 }
-.inicio-title2{
-    color: white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-}
-.inicio-subtitle{
-    color: white;
-    font-size: 20pt;
-    font-family: 'Inter', sans-serif;
-    margin: 0px 10px 15px 15px;
-}
-.inicio-titleArt{
-    color:gray;
-    font-size: 28pt;
-    font-family: 'Playfair Display', serif;
-    margin: 0px 10px 50px 5px;
-}
-.pie{
-    color: #C1C1C1;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-}
-
-.cabeza{
+.cabeza1{
     color: white;
     font-size: 26pt;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
+    position: absolute;
+    top: 6%;
+    left: 15%;
+}
+.cabeza2{
+    color: white;
+    font-size: 26pt;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 6%;
+    left: 25%;
+}
+.cabeza3{
+    color: white;
+    font-size: 26pt;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 6%;
+    left: 40%;
+}
+.cabeza4{
+    color: white;
+    font-size: 26pt;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 6%;
+    left: 55%;
+}
+.boton-cabeza{
+    background-color: #00F1FF;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Oswald',sans-serif;
+    font-size: 26pt;
+    color: #020100;
+    position: absolute;
+    left: 80%;
+    top: 6%;
+    padding: 0px 10px;
 }
 .logo{
     width: 100px;
     height: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
-.art-inicio{
-    width: 360px;
-    height: 420px;
-    border-width: 5px;
-    border-color: #CC0298;
-    border-style: solid;
-}
-.land-image{
-    width: 1280px;
-    height: 597px;
-    margin: 10px 5px 5px 10px;
-}
-.personajes-im{
-    width: 375px;
-    height: 345px;
-    border-radius: 50%;
-}
-.head-p{
-    background-color: #9A09F7;
-}
-.first-ini{
+.div-art-ini{
     background-image: url(/images/Articulo.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     height: 597px;
 }
-.second-ini{
-    background-color: #555E75;
-}
-.footer-ini{
-    background-color: #020100;
-}
-hr{
-    height: 5px;
-    background-color: white;
-}
-.col-articulosIni{
-    column-count: 3;
-    column-gap: 40px;
-    text-align: center;
-}
-.banner-ningiri{
-    background-image: url(/images/Ningiri.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-}
-.texto-nin{
+.title-art-ini{
+    color: white;
     font-size: 56pt;
     font-family: 'Playfair Display', serif;
-    position: absolute;
-    top: 400px; 
-    left: 50px;
-    opacity: 0.6;
+    position: relative;
+    margin-bottom: 5px;
+    top: 100px;
+    left: 20px;
 }
-.pie-prod{
-    color: #342D2D;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
+.subtitle-art-ini{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 80px;
+    left: 20px;
 }
-.col-personajes{
-    column-count: 3;
-    column-gap: 10px;
-    text-align: center;
-}
-.button-ini{
+.button-art-ini{
     background-color: #CC0298;
     border-radius: 20%;
     text-decoration: none;
@@ -113,11 +86,96 @@ hr{
     font-size: 20pt;
     color: white;
     position: relative;
-    left: 50px;
+    left: 20px;
     top: 100px;
-    padding: 15px 30px;
+    padding: 15px 50px;
 }
-.button-nin{
+.div-arts-ini{
+    background-color: #555E75;
+}
+.title-arts-ini{
+    color: white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.col-articulosIni{
+    column-count: 3;
+    column-gap: 25px;
+    text-align: center;
+}
+.title-indarts-ini{
+    color:white;
+    font-size: 28pt;
+    font-family: 'Playfair Display', serif;
+    margin: 0px 10px 50px 10px;
+}
+.ims-arts-inicio{
+    width: 360px;
+    height: 420px;
+    border-width: 5px;
+    border-color: #CC0298;
+    border-style: solid;
+}
+.footer-ini1{
+    color: #C1C1C1;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+.footer-ini2{
+    color: #C1C1C1;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 60px;
+}
+.footer-ini3{
+    color: #C1C1C1;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 100px;
+}
+.footer-ini4{
+    color: #C1C1C1;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 140px;
+}
+hr{
+    height: 5px;
+    background-color: white;
+}
+.prod-ningiri{
+    background-image: url(/images/Ningiri.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-top: 10px;
+}
+.prod-texto-nin{
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 400px; 
+    left: 50px;
+    opacity: 0.6;
+}
+.prod-boton-nin{
     background-color: #CC0298;
     border-radius: 20%;
     text-decoration: none;
@@ -129,46 +187,268 @@ hr{
     top: 670px;
     padding: 15px 20px;
 }
-.personajes-title1{
+.div-personajes{
+    background-color:#555E75;
+}
+.personajes-title{
     text-align: center;
     font-size: 63pt;
     font-family: 'Playfair Display', serif;
-    margin: 15px 15px 15px 15px;
+    position: relative;
+    top: 40px;
+    margin-bottom: 40px;
+
 }
-.personajes-title2{
+.personajes-subtitle{
     font-size: 28pt;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    margin: 15px 15px 25px 15px;
+    color: #342D2D;
+}
+.col-personajes{
+    column-count: 3;
+    column-gap: 20px;
+    text-align: center;
+}
+.personajes-im{
+    width: 375px;
+    height: 345px;
+    border-radius: 50%;
 }
 .texto-per{
     color:white;
     font-size: 56pt;
     font-family: 'Playfair Display', serif;
-    margin: 5px 10px 15px 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
-.p-per{
+.p-personajes{
     color: white;
     font-size: 22pt;
     font-family: 'Playfair Display', serif;
     text-align: justify;
-    margin: 10px 15px 5px 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
 }
-.art-2{
+.div-art2{
     background-image: url(/images/Articulo2.PNG);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 85%;
     height: 597px;
 }
-.tit-art2{
+.title-art2{
     color: white;
     font-size: 56pt;
     font-family: 'Playfair Display', serif;
-
+    position: relative;
+    top: 100px;
+    left: 120px;
 }
-.sub-art2{
+.subtitle-art2{
     color: white;
     font-size: 20pt;
     font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 80px;
+    left: 120px;
+}
+.boton-art2{
+    background-color: #CC0298;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 18pt;
+    color: white;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    padding: 15px 50px;
+}
+.footer-prod1{
+    color: #342D2D;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+.footer-prod2{
+    color: #342D2D;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 60px;
+}
+.footer-prod3{
+    color: #342D2D;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 100px;
+}
+.footer-prod4{
+    color: #342D2D;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 140px;
+}
+.col-acerca{
+    column-count: 2;
+    column-gap: 80px;
+    height: 500px;
+}
+.title-acerca{
+    color: #EF730B;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top:0px;
+    left: 50px;
+}
+.text-acerca{
+    color: white;
+    font-size: 25pt;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top:250px;
+    left: 50px;
+    right: 400px;
+    text-align: justify;
+}
+.im-acerca{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 130px;
+    left: 270px;
+}
+.div-fundadores{
+    background-color: #555E75;
+
+}
+.fundadores-title{
+    color: white;
+    text-align: center;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+
+}
+.col-fundadores{
+    column-count: 3;
+    column-gap: 20px;
+    text-align: center;
+}
+.ims-fundadores{
+    width: 360px;
+    height: 420px;
+    border-width: 5px;
+    border-color: #9A09F7;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+.text-fundadores{
+    color:white;
+    margin-top: 5px;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif;
+}
+.titulo-redes{
+    font-size: 60pt;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #CC0298;
+    margin-top: 10px;
+}
+.col-redes{
+    column-count: 3;
+    column-gap: 15px;
+    text-align: center;
+}
+.title-redes{
+    color:white;
+    font-size: 35pt;
+    font-family: 'Playfair Display', serif;
+    margin: 5px 10px 20px;
+}
+.im-redes{
+    height: 285px;
+    width: 285px;
+}
+.redes{
+    height: 700px;
+}
+.div-arts-com{
+    background-color: #555E75;
+    height: 850px;
+}
+.ims-arts-com{
+    width: 360px;
+    height: 420px;
+    border-width: 5px;
+    border-color: #EF730B;
+    border-style: solid;
+}
+.boton-artcom{
+    background-color: #CC0298;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 18pt;
+    color: white;
+    position: absolute;
+    top: 2050px;
+    left: 40%;
+    padding: 15px 50px;
+}
+.div-art3{
+    background-image: url(/images/Articulo3.PNG);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    height: 1000px;
+}
+.title-art3{
+    color: white;
+    font-size: 56pt;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
+.subtitle-art3{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 80px;
+    left: 120px;
+}
+.boton-art3{
+    background-color: #CC0298;
+    border-radius: 20%;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 18pt;
+    color: white;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    padding: 15px 50px;
 }

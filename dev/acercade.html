@@ -12,50 +12,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
     </head>
     
-    <body> <!--Se define la estructura de la pagina-->
+    <body style="background-color: #020100"> <!--Se define la estructura de la pagina-->
         <main>
-            <div class="head-p">
+            <div class="div-cabeza">
                 <img src="/images/WIP Company Logo.png" alt="Logo de WIP Company" class="logo">
                 <!--Creacion de encabezados con h del 1 al 6-->
-                <a href="/dev/inicio.html" rel="noopener noreferrer" class="cabeza">INICIO</a>
-                <a href="/dev/productos.html" rel="noopener noreferrer" class="cabeza">PRODUCTOS</a>
-                <a href="/dev/comunidad.html" rel="noopener noreferrer" class="cabeza">COMUNIDAD</a>
-                <a href="/dev/acercade.html" rel="noopener noreferrer" class="cabeza">ACERCA DE</a>
+                <a href="/dev/inicio.html" rel="noopener noreferrer" class="cabeza1">INICIO</a>
+                <a href="/dev/productos.html" rel="noopener noreferrer" class="cabeza2">PRODUCTOS</a>
+                <a href="/dev/comunidad.html" rel="noopener noreferrer" class="cabeza3">COMUNIDAD</a>
+                <a href="/dev/acercade.html" rel="noopener noreferrer" class="cabeza4">ACERCA DE</a>
+                <a href="#" rel="noopener noreferrer" class="boton-cabeza">INICIAR SESIÓN</a>
             </div>
 
             <!--hr crea una linea horizontal de division-->
-            <hr>
-            <div>
-                <h1>Work in Progress</h1>
+            <div class="col-acerca">
+                <h1 class="title-acerca">Work In Progress</h1>
                 <!--Creacion de parrafos con la etiqueta p-->
                 <!--ul <li> para cada elemento, para listas no ordenadas y ol para las ordenadas-->
-                <p>WIP Company es una compañía de desarrollo de proyectos de software fundada en el año 2022 por tres estudiantes del programa de Ingeniería de Sistemas y Computación en la Universidad EIA. </p>
-                <p>Nace como una iniciativa para crear un producto basado en un videojuego, lo que se continuó expandiendo hasta el presente con diversas iniciativas, como la presente pagina</p>
-                <p>La página web tiene como finalidad servir de puente entre los desarrolladores y los diversos usuarios de la red, ademas de servir como portafolio de exposición de proyectos, teniendo siempre presente nuestros valores de: Innovación, Responsabilidad, Creatividad y Trabajo en Equipo. LETS WORK! </p>
-                <img src="/images/Default.png" alt="Logo de WIP Company"> 
-            </div>
-            
-            <hr>
-
-            <div>
-                <h1>Fundadores</h1>
-                <img src="/images/Default.png" alt="Daniel Restrepo Quiñones"> 
-                <h2>Daniel Restrepo Quiñones</h2>
-                <img src="/images/Default.png" alt="Natalia Naranjo Rodríguez"> 
-                <h2>Natalia Naranjo Rodríguez</h2>
-                <img src="/images/Default.png" alt="Pablo Mesa Hernández"> 
-                <h2>Pablo Mesa Hernández</h2>
+                <p class="text-acerca">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et lacus ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et lacus ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <img src="/images/WIP Company Logo.png" alt="Logo de WIP Company" class="im-acerca"> 
             </div>
 
-            <hr>
+            <div class="div-fundadores">
+                <h1 class="fundadores-title">Fundadores</h1>
+                <div class="col-fundadores">
+                    <img src="/images/Daniel.PNG" alt="Daniel Restrepo Quiñones" class="ims-fundadores"> 
+                    <h2 class="text-fundadores">Daniel</h2>
+                    <img src="/images/Natalia.PNG" alt="Natalia Naranjo Rodríguez" class="ims-fundadores"> 
+                    <h2 class="text-fundadores">Natalia</h2>
+                    <img src="/images/Pablo.PNG" alt="Pablo Mesa Hernández" class="ims-fundadores"> 
+                    <h2 class="text-fundadores">Pablo</h2>
+                </div>
+                
+            </div>
 
-            <div>
-                <!--Actualizar dead link de Patreon-->
-                <h2>Redes Sociales</h2>
-                <a href="https://www.instagram.com/wipc_ompany/" target="_blank" rel="noopener noreferrer"><img src="/images/Default.png" alt="Logo de Instagram"> </a>
-                <a href="https://discord.gg/xBdDaAzFpN" target="_blank" rel="noopener noreferrer"><img src="/images/Default.png" alt="Logo de Discord"></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="/images/Default.png" alt="Logo de Patreon"> </a>
-                <p><strong>¡Apóyanos con una donación en Patreon!</strong></p> 
+            <div class="redes">
+                <h2 class="titulo-redes">Redes Sociales</h2>   
+                <div class="col-redes">
+                    <a href="https://www.instagram.com/wipc_ompany/" target="_blank" rel="noopener noreferrer"><img src="/images/Instagram-icon.png" alt="Logo de Instagram" class="im-redes"> </a>
+                    <h4 class="title-redes">INSTAGRAM</h4>
+                    <a href="https://discord.gg/xBdDaAzFpN" target="_blank" rel="noopener noreferrer"><img src="/images/Discord-icon.png" alt="Logo de Discord" class="im-redes"></a>
+                    <h4 class="title-redes">DISCORD</h4>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="/images/Patreon.jpg" alt="Logo de Patreon" class="im-redes"> </a>
+                    <h4 class="title-redes">APOYANOS CON UNA DONACIÓN EN PATREON</h4>
+                </div>
             </div>
 
             <hr>
@@ -64,10 +64,10 @@
             <div>
                 <!--TODO: Cambiar dead links-->
                 <img src="/images/WIP Company Logo.png" alt="Logo de WIP Company" class="logo"> 
-                <a href="/dev/preguntas.html" rel="noopener noreferrer"><small>Preguntas Frecuentes</small></a>
-                <a href="#" rel="noopener noreferrer"><small>Política de Privacidad</small></a>
-                <a href="#" rel="noopener noreferrer"><small>Soporte</small></a>
-                <a href="#" rel="noopener noreferrer"><small>Encuéntranos</small></a>
+                <a href="/dev/preguntas.html" rel="noopener noreferrer" class="footer-ini1"><small>Preguntas Frecuentes</small></a>
+                <a href="#" rel="noopener noreferrer" class="footer-ini2"><small>Política de Privacidad</small></a>
+                <a href="#" rel="noopener noreferrer" class="footer-ini3"><small>Soporte</small></a>
+                <a href="#" rel="noopener noreferrer" class="footer-ini4"><small>Encuéntranos</small></a>
             </div>
         </footer>
     </body>

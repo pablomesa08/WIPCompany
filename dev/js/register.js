@@ -1,35 +1,19 @@
+const registerURL = "";
+
+const usernameURL = "";
+const emailURL = "";
+
+var isPasswordAcceptable = false;
+var isEmailAcceptable = false;
+var isUsernameAcceptable = false;
+
 //para funcionamiento correcto hacer llamados en funcion de eventos pero con intervalos fijos de tiempo entre peticiones
 
-async function checkEverything(){
-    usersData().then((users) => {
-        let isDataAcceptable = true;//si todos los datos son correctos
-        userInfo = getInfo();
-        //revisar y posteriormente marcar
-        if(checkUsername(userInfo.username)){
-            //se puede usar
-        } else{
-            //ya existe
-            isDataAcceptable = false;
-            //indicar el error
-        }
-        if(checkEmail(userInfo.email)){
-            //se puede usar
-        } else{
-            //ya se ha usado antes o no es un correo
-            isDataAcceptable = false;
-            //indicar el error
-        }
-        if(checkPassword(userInfo.password)){
-            //cumple con los requisitos
-        } else{
-            //no cumple con los requisitos
-            isDataAcceptable = false;
-            //indicar el error
-        }
-
-        if(isDataAcceptable)
-            isDataAcceptable = true;//insertar el nuevo usuario
-    });
+async function register(){
+    if(isPasswordAcceptable && isEmailAcceptable && isUsernameAcceptable){
+        fetch(url)
+    }
+    //no se puede registrar todavia
 }
 
 //devuelve los datos de todos los usuarios de la base de datos
@@ -47,26 +31,37 @@ function getInfo(){
 }
 
 //revisar si el usuario cumple con los requisitos y no esta repetido
-async function checkUsername(username = "", users){
+async function checkUsername(){
+    let username = "";
+    let customHeaders = {
+        "Content-type" : "application/json; charset=UTF-8"
+    };
+    
     if (password.length > 50)//usuario muy largo
         return false;
 
     //verificacion de si el usuario esta repetido
-    let i = -1;
-    while (++i < users.length){
-        if(users[i].username == username){//username repetido
-            break;
-        }
-    }
-
-    if(i < users.length){
-        return true;
-    }
-    return false;
-    
+    fetch(usernameURL, {
+        method: "POST",
+        headers: customHeaders,
+        body: JSON.stringify(username),
+    })
+    .then((response) => response.stringify())
+    .then(response => {
+        if(response.keys(obj).length == 0)
+            isUsernameAcceptable = true;
+        else 
+            isUsernameAcceptable = false;
+    }).catch((error) => {
+        console.log(error)
+    })
 }
 
 async function checkEmail(email = "", users){
+    let email = "";
+    let customHeaders = {
+        "Content-type" : "application/json; charset=UTF-8"
+    }
     //verificacion de si es un correo
     //^: inicio del string
     //\w: cualquier letra [Aa-Zz], numero [0-9] o guion bajo [_]
@@ -78,21 +73,25 @@ async function checkEmail(email = "", users){
     //{a,b}: minimo a, maximo b de lo anterior, siendo a y b enteros y a < b
     //$: final del string
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
-        return false;//no es un email
+        isEmailAcceptable = false;
+        return;//no es un email
     } 
     
     //verificacion de si el usuario esta repetido
-    let i = -1;
-    while (++i < users.length){
-        if(users[i].email == email){//email repetido
-            break;
-        }
-    }
-    if(i < users.length){
-        return true;//se puede usar
-    }
-
-    return false;//ya se ha usado
+    fetch(emailURL, {
+        method: "POST",
+        headers: customHeaders,
+        body: JSON.stringify(email),
+    })
+    .then((response) => response.stringify())
+    .then(response => {
+        if(response.keys(obj).length == 0)
+            isEmailAcceptable = true;
+        else 
+            isEmailAcceptable = false;
+    }).catch((error) => {
+        console.log(error)
+    })
     
 }
 
@@ -116,7 +115,7 @@ function checkPassword(password = ""){
     let charEsp = false;
     let j = -1;
     for (let i = 0; i < password.length; i++) {
-        while (++j < caracteresMinusculas.length) {
+        while (!charMin && ++j < caracteresMinusculas.length) {
             if(caracteresMinusculas[j] == password[i]){
                 charMin = true;
                 break;
@@ -124,7 +123,7 @@ function checkPassword(password = ""){
         }
         j = -1;
 
-        while (++j < caracteresMayusculas.length) {
+        while (!charMay && ++j < caracteresMayusculas.length) {
             if(caracteresMayusculas[j] == password[i]){
                 charMay = true;
                 break;
@@ -132,7 +131,7 @@ function checkPassword(password = ""){
         }
         j = -1;
         
-        while (++j < caracteresEspeciales.length) {
+        while (!charEsp && ++j < caracteresEspeciales.length) {
             if(caracteresEspeciales[j] == password[i]){
                 charEsp = true;
                 break;

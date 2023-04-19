@@ -17,10 +17,13 @@ async function loginData(url = "https://jsonplaceholder.typicode.com/users", dat
         headers: customHeaders,
         body: JSON.stringify(data),
     })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-    });
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        //indicar que no se pudo hacer el login
+    })
     const token = await response;
     return token;
 }

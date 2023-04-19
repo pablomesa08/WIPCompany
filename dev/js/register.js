@@ -11,28 +11,51 @@ var isUsernameAcceptable = false;
 
 async function register(){
     if(isPasswordAcceptable && isEmailAcceptable && isUsernameAcceptable){
-        fetch(url)
+        user = getInfo();
+        customHeaders = {
+
+        };
+
+        fetch(url, {
+            method: "POST",
+            headers: customHeaders,
+            body: JSON.stringify(user),
+        })
+        .then((response) => response.stringify())
+        .then((data) => {
+            //revisar si la respuesta fue buena
+        })
+        .catch((error) => {
+            console.log(error);
+            //indicar que no se pudo registrar al usuario
+        })
     }
     //no se puede registrar todavia
 }
 
-//devuelve los datos de todos los usuarios de la base de datos
-async function usersData(url = 'https://jsonplaceholder.typicode.com/users', data = {}){
-    let response = await fetch(url);
-    let users = await response.json();
-    return users;
+function getInfo(){
+    let username = ""/*document.getElementById("username").value*/;
+    let password = ""/*document.getElementById("password").value*/;
+    let email = ""/*document.getElementById("email").value*/;
+    let primerNombre = ""/*document.getElementById("email").value*/;
+    let segundoNombre = ""/*document.getElementById("email").value*/;
+    let apellidos = ""/*document.getElementById("email").value*/;
+    let idGenero = ""/*document.getElementById("email").value*/;
+    let fechaNacimiento = ""/*document.getElementById("email").value*/;
+
+    return {username, password, email, primerNombre, segundoNombre, apellidos, idGenero, fechaNacimiento};
 }
 
-function getInfo(){
-    var username = "Delphine"/*document.getElementById("username").value*/;
-    var email = "Delphine@pain.com"/*document.getElementById("email").value*/;
-    var password = "D3lph1n3"/*document.getElementById("password").value*/;
-    return {username, password};
+function checkNull(data, element){
+
+    if(data = "")
+        return false;//se dice que el campo no se puede recibir todavia
+
 }
 
 //revisar si el usuario cumple con los requisitos y no esta repetido
 async function checkUsername(){
-    let username = "";
+    let username = ""/*document.getElementById("username").value*/;
     let customHeaders = {
         "Content-type" : "application/json; charset=UTF-8"
     };
@@ -57,8 +80,8 @@ async function checkUsername(){
     })
 }
 
-async function checkEmail(email = "", users){
-    let email = "";
+async function checkEmail(){
+    let email = ""/*document.getElementById("email").value*/;
     let customHeaders = {
         "Content-type" : "application/json; charset=UTF-8"
     }
@@ -96,7 +119,8 @@ async function checkEmail(email = "", users){
 }
 
 //revisar si la contraseña cumple con los requisitos
-function checkPassword(password = ""){
+function checkPassword(){
+    let password = ""/*document.getElementById("password").value*/;
     //contraseña muy larga o corta
     if (password.length < 8 || password.length > 50)
         return false;

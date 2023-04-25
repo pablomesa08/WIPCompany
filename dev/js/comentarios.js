@@ -19,7 +19,7 @@ function getJson(endpoint) {
   });
 }
 
-async function fetchData() {
+async function fetchData() {s
   try {
     const jsonResp = await getJson(endpointComentario);
     console.log(typeof(jsonResp))

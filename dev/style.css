@@ -1,87 +1,42 @@
 .div-cabeza{
-    background-color: #9A09F7;
-}
-.cabeza1{
-    color: white;
-    font-size: 26pt;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    position: absolute;
-    top: 6%;
-    left: 15%;
+    height: 120px;
+    top: 0px;
+    background: #F8F8F8;
 }
 .cabeza{
-    color: white  !important;
-    font-size: 26pt;
-    font-family: 'Oswald', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-style:normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #737373;
 }
-.cabeza2{
-    color: white;
-    font-size: 26pt;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    position: absolute;
-    top: 6%;
-    left: 25%;
+.boton1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 31px !important;
+    margin-right: 10px;
+    background: #658FFF !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important
 }
-.cabeza3{
-    color: white;
-    font-size: 26pt;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    position: absolute;
-    top: 6%;
-    left: 40%;
+.boton2{
+    background-color: #FFFFFF !important;
+    padding: 15px 31px !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #658FFF !important;
 }
-.cabeza4{
-    color: white;
-    font-size: 26pt;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    position: absolute;
-    top: 6%;
-    left: 55%;
+.container1{
+    height: 525px;
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-style: normal;
 }
-.boton-cabeza{
-    background-color: #00F1FF;
-    border-radius: 20%;
-    text-decoration: none;
-    font-family: 'Oswald',sans-serif;
-    font-size: 26pt;
-    color: #020100;
-    position: absolute;
-    left: 80%;
-    top: 6%;
-    padding: 0px 10px;
+.c1{
+    padding: 5%;
 }
-.logo{
-    width: 100px;
-    height: 100px;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-.div-art-ini{
-    background-image: url(/images/Articulo.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 597px;
-}
-.title-art-ini{
-    color: white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    margin-bottom: 5px;
-    top: 100px;
-    left: 20px;
-}
-.subtitle-art-ini{
-    color: white;
-    font-size: 20pt;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 80px;
-    left: 20px;
+.c2{
+    text-align: center;
+    padding: 5%;
 }
 .button-art-ini{
     background-color: #CC0298;

@@ -1,5 +1,5 @@
 const content_aports = document.getElementById('seccion_aportes');
-const endpointComentario = "https://mocki.io/v1/f661fef8-ee06-4168-99f5-37827a1a4842"
+const endpointComentario = "https://mocki.io/v1/c8160c17-9ac9-4a8b-b1ea-0d6dc85ab9b3"
 
 function getJson(endpoint) {
   return new Promise((resolve, reject) => {
@@ -19,7 +19,7 @@ function getJson(endpoint) {
   });
 }
 
-async function fetchData() {s
+async function fetchData() {
   try {
     const jsonResp = await getJson(endpointComentario);
     console.log(typeof(jsonResp))

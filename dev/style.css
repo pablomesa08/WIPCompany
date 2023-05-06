@@ -55,6 +55,15 @@
 .imalogo{
     margin-bottom: 10%;
 }
+.foot{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-style:normal;
+    color: #646464 !important;
+}
+.imafoot{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .block{
     width: fit-content;
     height:fit-content;

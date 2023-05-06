@@ -31,7 +31,7 @@ async function fetchData() {
       content_aports.innerHTML += `<div class="d-flex border mt-3 justify-content-around align-items-center">
     <img class="rounded-circle mx-3" style="max-width: 100px; max-height: 100px" src="https://www.gravatar.com/avatar/${md5(email)}" >
     <div class="d-flex flex-column border mt-3">
-    <p class="mx-3  mb-0"> <strong>${username}</strong></p>
+    <p class="mx-3"> <strong>${username}</strong></p>
     <p class="mx-3" style="font-size:10px;">${fecha}</p>
     <p class="mx-3" style="font-size:15px;">${comentario}</p>
     </div>

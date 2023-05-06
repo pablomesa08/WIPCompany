@@ -3,6 +3,12 @@
     top: 0px;
     background: #F8F8F8;
 }
+
+/*<div class="form-check" style="padding: 5%;">
+<h1 style="text-align:center;">FORUM</h1>
+<div id="seccion_aportes" class="flex-lg-fill" style="width: 600px; padding: 5%;"></div>
+</div>*/
+
 .cabeza{
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     font-style:normal;

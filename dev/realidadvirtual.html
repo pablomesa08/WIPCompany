@@ -1,11 +1,11 @@
 <!DOCTYPE html> 
 
 <html lang="es"> 
-    <head>
-        <title>Comunidad</title>
+    <head> 
+        <title>Artículo</title>
+        <link href="style.css" rel="stylesheet"> <!--Referencia al archivo de estilos-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     </head>
     <header>
         <nav class="navbar navbar-expand-lg ">
-                <div class="div-cabeza container-fluid">
+            <div class="div-cabeza container-fluid">
                 <a class="navbar-brand" >
                     <img src="/images/WIP Company Logo.png" width="100px" height="100px">
                 </a>
@@ -22,53 +22,56 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="cabeza navbar-nav">
-                    <a class="nav-link" href="/dev/inicio.html">Inicio</a>
-                    <a class="nav-link" href="/dev/productos.html">Productos</a>
-                    <a class="nav-link" href="/dev/comunidad.html">Comunidad</a>
-                    <a class="nav-link" href="/dev/acercade.html">Acerca de</a>
+                        <a class="nav-link" href="/dev/inicio.html">Inicio</a>
+                        <a class="nav-link" href="/dev/productos.html">Productos</a>
+                        <a class="nav-link" href="/dev/comunidad.html">Comunidad</a>
+                        <a class="nav-link" href="/dev/acercade.html">Acerca de</a>
                     </div>
                 </div>
                 <span>
                     <a class="boton1 btn btn-primary btn-lg" href="/dev/register.html" role="button">Registro</a>
                     <a class="boton2 btn btn-primary btn-lg" href="/dev/login.html" role="button">Ingresa</a>
                 </span>
-                </div>
+            </div>
         </nav>
     </header>
+
     <body style="background-color: #F8F8F8"> 
-        <main>
-            <div class="container1 container">
-                <div class="row">
-                    <div class="c1 col">
-                        <h5 style="font-size: 20px;">Artículo</h5>
-                        <h1 style="font-size: 55px; color: #212121;"><strong>Los Retos de la Realidad Virtual</strong></h1>
-                        <p style="font-size: 18px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, itaque deleniti! Velit ipsam culpa ipsum id repudiandae nesciunt, nobis necessitatibus sed maxime voluptas eum consequatur dolorem unde facere voluptates debitis.</p>
-                        <a class="boton1 btn btn-primary" href="/dev/realidadvirtual.html" role="button">Leer</a>
-                    </div>
-                    <div class="c2 col">
-                        <img src="/images/4.1.jpg" width="400" height="345" style="border-top-left-radius: 20%; border-bottom-right-radius: 20%;">
-                    </div>
+        <main> 
+
+            <div class="art2container container" style="height: 675px;">
+                <h1 class="title2art"><strong>Los Retos de la <br> Realidad Virtual</strong></h1>
+                <h3 class="sub2art"><strong>Introducción</strong></h3>
+                <h5 class="fecha2art"><strong>13 DE FEBRERO DE 2023</strong></h5>
+            </div>
+
+            <div class="contentart container" style="height: auto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus nunc, molestie eu mauris non, pharetra tristique lectus. Quisque scelerisque neque enim, id pharetra urna elementum at. Vestibulum nec odio et tellus vulputate convallis id at mauris. Donec aliquet hendrerit nibh id feugiat. Nulla hendrerit nibh felis, eget bibendum metus pellentesque consequat. Nunc vitae augue ultrices, porta ipsum eget, fermentum enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur commodo vestibulum velit, nec dignissim ante. Etiam tincidunt, odio in pellentesque elementum, dui libero dapibus risus, et ultrices turpis nibh ut purus. Pellentesque tincidunt venenatis nisl sed iaculis. Praesent semper arcu rhoncus aliquet auctor.
+                </p>
+                <p>
+                    Etiam placerat justo non lectus viverra tincidunt. Praesent massa tortor, dictum et dictum sed, dapibus id libero. Donec id varius ipsum. Fusce in aliquam ex. Maecenas vel mollis metus. Nam tincidunt, elit et elementum feugiat, augue dui congue elit, quis efficitur magna lacus id urna. Fusce et condimentum eros. Duis risus risus, varius non elementum sit amet, maximus at risus. Pellentesque ac ante lacus.
+                </p>
+                <p>
+                    Curabitur nisi ipsum, rutrum et commodo sed, tristique eget nibh. Maecenas congue tincidunt tempus. Fusce at neque sed nulla finibus aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis non semper odio. Ut fermentum hendrerit ante, at pulvinar quam rutrum et. Sed eleifend quis enim sed efficitur. Curabitur sit amet urna est. Etiam scelerisque ante sed libero hendrerit vehicula. Fusce hendrerit, orci sit amet sodales ullamcorper, mauris massa congue nisi, ut euismod lectus est id justo. Sed vitae magna quis leo congue posuere non vitae nisl. Phasellus vel velit sit amet sapien posuere finibus sit amet eget felis. In ac mollis mauris.
+                </p> 
+                <p>
+                    Etiam lacinia vel sem id venenatis. Integer porttitor et metus sit amet dictum. Pellentesque tempus congue interdum. Nullam suscipit mi lectus, sit amet luctus mauris consectetur vehicula. Nullam sit amet nisi diam. Sed facilisis enim a orci viverra, sed egestas elit vehicula. Fusce tincidunt rhoncus nibh, pharetra mattis mi porta quis. Nam porttitor massa massa, ac porttitor odio tincidunt quis.
+                </p>
+                <p>
+                    Fusce scelerisque neque sed auctor bibendum. Suspendisse non sagittis nulla. In tincidunt, ligula sit amet vestibulum imperdiet, libero justo tincidunt nibh, ut blandit justo turpis sit amet dui. Phasellus id convallis tortor. Vestibulum vel lectus nibh. Phasellus lobortis magna neque, sit amet convallis dui condimentum et. Morbi sed tincidunt lectus. Donec risus velit, convallis vel luctus ut, pretium nec elit. Pellentesque mauris elit, vulputate vitae ante at, consectetur ultrices mauris. Nullam in purus sed nisi euismod vestibulum. Maecenas quis massa imperdiet ipsum placerat ornare.
+                </p>
+                <div class="container-sm">
+                    <img src="/images/person.svg" width="50px" height="50px" class="imaart">
+                    <h6 style="font-size: 16px; color: #98DA65;" class="hart"><strong>Juan Pablo Díaz</strong></h6>
+                    <p style="font-size: 16px; color: #252B42;" class="part"><strong>Fanático de Ningiri</strong></p>
                 </div>
             </div>
 
-            <div class="container-fluid" style="padding: 5%;">
-                <h1 style="text-align:center;">FORUM</h1>
-                <div id="seccion_aportes" style="width:fit-content; padding: 5%;"></div>
-                <a class="boton1 btn btn-primary" href="#" role="button">Escribir comentario</a>
-                <a class="boton1 btn btn-primary" href="#" role="button">Cargar más comentarios</a>
-            </div>
-            
             <div class="container1 container">
                 <div class="row">
                     <div class="col">
                         <div class="card" style="width: 20.7rem;">
-                            <a href="/dev/realidadvirtual.html"><img src="/images/4.1.jpg" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
-                            <div class="card-body">
-                                <h5 class="tcard card-title">Los Retos de la Realidad Virtual</h5>
-                                <p class="pcard card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 20.7rem; margin-top: 15%;">
                             <a href="/dev/culturaJaponesa.html"><img src="/images/Japon.png" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
                             <div class="card-body">
                                 <h5 class="tcard card-title">Cultura Japonesa en Ningiri</h5>
@@ -78,13 +81,6 @@
                     </div>
                     <div class="col">
                         <div class="card" style="width: 20.7rem;">
-                            <a href="/dev/consolas.html"><img src="/images/5.1.jpg" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
-                            <div class="card-body">
-                                <h5 class="tcard card-title">Consolas Icónicas</h5>
-                                <p class="pcard card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 20.7rem; margin-top: 15%;">
                             <a href="/dev/historia.html"><img src="/images/Inicio.png" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
                             <div class="card-body">
                                 <h5 class="tcard card-title">Como Inició esta Historia</h5>
@@ -94,13 +90,6 @@
                     </div>
                     <div class="col">
                         <div class="card" style="width: 20.7rem;">
-                            <a href="/dev/videojuegos.html"><img src="/images/Gato.jpg" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
-                            <div class="card-body">
-                                <h5 class="tcard card-title">El Mundo de los Videojuegos</h5>
-                                <p class="pcard card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 20.7rem; margin-top: 15%;">
                             <a href="/dev/wip.html"><img src="/images/WIP.png" class="card-img-top" alt="..." style="width: 330px; height: 200px;"></a>
                             <div class="card-body">
                                 <h5 class="tcard card-title">WIP Company</h5>
@@ -110,6 +99,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="container-fluid" style="height: 50px;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -129,7 +120,7 @@
                     </li>
                 </ul>
             </div>
-        
+
             <div class="container-fluid" style="height: 50px;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -140,10 +131,7 @@
                     </li>
                 </ul>
             </div>
-
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="./js/md5.js"></script>
-        <script src="./js/comentarios.js"></script>
     </body>
 </html>

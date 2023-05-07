@@ -100,348 +100,133 @@
     margin-left: 15%;
     margin-right: 15%;
 }
-.title-indarts-ini{
-    color:white;
-    font-size: 28pt;
-    font-family: 'Playfair Display', serif;
-    margin: 0px 10px 50px 10px;
+.tcard{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #252B42;
+    font-size: 18px;
 }
-.ims-arts-inicio{
-    width: 360px;
-    height: 420px;
-    border-width: 5px;
-    border-color: #CC0298;
-    border-style: solid;
+.pcard{
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: justify;
 }
-.footer-ini1{
-    color: #C1C1C1;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 20px;
-}
-.footer-ini2{
-    color: #C1C1C1;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 60px;
-}
-.footer-ini3{
-    color: #C1C1C1;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 100px;
-}
-.footer-ini4{
-    color: #C1C1C1;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 140px;
-}
-hr{
-    height: 5px;
-    background-color: white;
-}
-.prod-ningiri{
-    background-image: url(/images/Ningiri.PNG);
+.artcontainer{
+    background-image: url(/images/JaponArt.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
-    margin-top: 10px;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
-.prod-texto-nin{
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: absolute;
-    top: 400px; 
-    left: 50px;
-    opacity: 0.6;
+.titleart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 55px;
+    color: #FFFFFF !important;
+    padding-top: 15%;
+    padding-left: 5%;
 }
-.prod-boton-nin{
-    background-color: #CC0298;
-    border-radius: 20%;
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-size: 18pt;
-    color: white;
-    position: absolute;
-    left: 70px;
-    top: 670px;
-    padding: 15px 20px;
+.subart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 24px;
+    color: #FFFFFF !important;
+    padding-top: 2%;
+    padding-left: 5%;
 }
-.div-personajes{
-    background-color:#555E75;
+.fechaart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    padding-top: 2%;
+    padding-left: 5%;
 }
-.personajes-title{
-    text-align: center;
-    font-size: 63pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    top: 40px;
-    margin-bottom: 40px;
-
-}
-.personajes-subtitle{
-    font-size: 28pt;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: #342D2D;
-}
-.col-personajes{
-    column-count: 3;
-    column-gap: 20px;
-    text-align: center;
-}
-.personajes-im{
-    width: 375px;
-    height: 345px;
-    border-radius: 50%;
-}
-.texto-per{
-    color:white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.p-personajes{
-    color: white;
-    font-size: 22pt;
-    font-family: 'Playfair Display', serif;
+.contentart{
+    margin-bottom: 5%;
     text-align: justify;
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #252B42 !important;
+    font-size: 18px;
 }
-.div-art2{
-    background-image: url(/images/Articulo2.PNG);
-    background-position: 50%;
+.imaart{
+    margin-left: 75%;
+}
+.hart{
+    margin-left: 80%;
+    margin-top: -4%;
+}
+.part{
+    margin-left: 80%;
+}
+.art2container{
+    background-image: url(/images/4.1.jpg);
     background-repeat: no-repeat;
-    background-size: 85%;
-    height: 597px;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
-.title-art2{
-    color: white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    top: 100px;
-    left: 120px;
+.title2art{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 55px;
+    color: #252B42 !important;
+    padding-top: 15%;
+    padding-left: 5%;
 }
-.subtitle-art2{
-    color: white;
-    font-size: 20pt;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 80px;
-    left: 120px;
+.sub2art{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 24px;
+    color: #252B42 !important;
+    padding-top: 2%;
+    padding-left: 5%;
 }
-.boton-art2{
-    background-color: #CC0298;
-    border-radius: 20%;
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-size: 18pt;
-    color: white;
-    position: relative;
-    left: 120px;
-    top: 100px;
-    padding: 15px 50px;
+.fecha2art{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 16px;
+    color: #252B42 !important;
+    padding-top: 2%;
+    padding-left: 5%;
 }
-.footer-prod1{
-    color: #342D2D;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 20px;
-}
-.footer-prod2{
-    color: #342D2D;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 60px;
-}
-.footer-prod3{
-    color: #342D2D;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 100px;
-}
-.footer-prod4{
-    color: #342D2D;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif; 
-    text-decoration: none;
-    position: relative;
-    top: -40px;
-    left: 140px;
-}
-.col-acerca{
-    column-count: 2;
-    column-gap: 80px;
-    height: 500px;
-}
-.title-acerca{
-    color: #EF730B;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    top:0px;
-    left: 50px;
-}
-.text-acerca{
-    color: white;
-    font-size: 25pt;
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    top:250px;
-    left: 50px;
-    right: 400px;
-    text-align: justify;
-}
-.im-acerca{
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: 130px;
-    left: 270px;
-}
-.div-fundadores{
-    background-color: #555E75;
-
-}
-.fundadores-title{
-    color: white;
-    text-align: center;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    top: 40px;
-    margin-bottom: 60px;
-
-}
-.col-fundadores{
-    column-count: 3;
-    column-gap: 20px;
-    text-align: center;
-}
-.ims-fundadores{
-    width: 360px;
-    height: 420px;
-    border-width: 5px;
-    border-color: #9A09F7;
-    border-style: solid;
-    margin-bottom: 5px;
-}
-.text-fundadores{
-    color:white;
-    margin-top: 5px;
-    font-size: 18pt;
-    font-family: 'Playfair Display', serif;
-}
-.titulo-redes{
-    font-size: 60pt;
-    font-family: 'Playfair Display', serif;
-    color: white;
-    padding: 0px 0px;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #CC0298;
-    margin-top: 10px;
-}
-.col-redes{
-    column-count: 3;
-    column-gap: 15px;
-    text-align: center;
-}
-.title-redes{
-    color:white;
-    font-size: 35pt;
-    font-family: 'Playfair Display', serif;
-    margin: 5px 10px 20px;
-}
-.im-redes{
-    height: 285px;
-    width: 285px;
-}
-.redes{
-    height: 700px;
-}
-.div-arts-com{
-    background-color: #555E75;
-    height: 850px;
-}
-.ims-arts-com{
-    width: 360px;
-    height: 420px;
-    border-width: 5px;
-    border-color: #EF730B;
-    border-style: solid;
-}
-.boton-artcom{
-    background-color: #CC0298;
-    border-radius: 20%;
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-size: 18pt;
-    color: white;
-    position: absolute;
-    top: 2050px;
-    left: 40%;
-    padding: 15px 50px;
-}
-.div-art3{
-    background-image: url(/images/Articulo3.PNG);
-    background-position: 50%;
+.art3container{
+    background-image: url(/images/5.1.jpg);
     background-repeat: no-repeat;
-    background-size: 85%;
-    height: 1000px;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
-.title-art3{
-    color: white;
-    font-size: 56pt;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    top: 100px;
-    left: 120px;
+.art4container{
+    background-image: url(/images/Gato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
-.subtitle-art3{
-    color: white;
-    font-size: 20pt;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 80px;
-    left: 120px;
+.sub3art{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 24px;
+    color: #252B42 !important;
+    padding-top: 5%;
+    padding-left: 5%;
 }
-.boton-art3{
-    background-color: #CC0298;
-    border-radius: 20%;
-    text-decoration: none;
-    font-family: 'Inter',sans-serif;
-    font-size: 18pt;
-    color: white;
-    position: relative;
-    left: 120px;
-    top: 100px;
-    padding: 15px 50px;
+.art5container{
+    background-image: url(/images/Inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.title3art{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 55px;
+    color: #FFFF !important;
+    padding-top: 20%;
+    padding-left: 5%;
+}
+.art6container{
+    background-image: url(/images/WIP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }

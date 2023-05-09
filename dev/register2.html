@@ -17,7 +17,7 @@
             <div class="box container">
                 <a href="#" onclick="javascript:window.history.back(-1);return false;"><img src="/images/x.svg" class="close"></a>
                 <img src="/images/WIP Company Logo.png" class="logoini">
-                <h1 class="titulo">Crea una Cuenta</h1>
+                <h1 class="titulo">AAAAAAAAAAAAAAAAAAAA</h1>
                 <div class="row">
                     <div class="colum col-3">
                         <h4 class="aviso">¿Ya tienes una cuenta?</h4>
@@ -33,13 +33,23 @@
                             <label for="nombre de usuario" class="username">¿Cuál es tu nombre de usuario?</label>
                         </div>
                         <div class="p-2">
-                            <input type="text" class="texto" placeholder="Ingrese su nombre de usuario" required>
+                            <input type="text" class="texto" placeholder="Ingrese su nombre de usuario" id="username">
                         </div>
                         <div class="p-2">
-                            <input type="button" value="Ingresa" class="button" onclick="window.location.href='/dev/register3.html'">
+                            <a class="btn btn-primary btn-lg"role="button" onclick="checkingInfo()">Siguiente</a>
                         </div>
                     </div>
                 </form>
+                <script>
+                    function checkingInfo(){
+                        var data = document.getElementById("username").value;
+                        if(data == ""){
+                            alert("Por favor complete los campos");
+                        }else{
+                            window.location.href="/dev/register3.html"
+                        }
+                    }
+                </script>
             </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

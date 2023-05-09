@@ -1,9 +1,13 @@
 .box{
-    width:795px;
     height: fit-content;
     background-color: #FFFF;
     margin-top: 5%;
-    border-style: solid;
+}
+.close{
+    width:25px;
+    height: 25px;
+    margin-left: 70%;
+    margin-top: 2%;
 }
 .logoini{
     border-radius: 50%;
@@ -11,7 +15,7 @@
     height: 48px;
     margin-left: calc(48%);
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .titulo{
     text-align: center;
@@ -26,10 +30,49 @@
 }
 .colum{
     margin-left: 35%;
-    margin-right: -8%;
+    margin-right: -5%;
 }
-a{
+.a1{
     color: #333333 !important;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.a1:hover{
+    background-color: #d8d5d5;
+}
+.username{
+    color: #666666 !important;
+    font-size: 16px;
+    margin-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.password{
+    color: #666666 !important;
+    font-size: 16px;
+    margin-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.texto{
+    margin-left: 25%;
+    border-color: #d8d5d5;
+    width: 33rem;
+    background-color: #FFFF;
+}
+.contrase{
+    margin-left: 25%;
+    border-color:#d8d5d5;
+    width: 33rem;
+    background-color: #FFFF;
+}
+.olvido{
+    margin-left: 50%;
+}
+.button{
+    width: 33rem;
+    margin-left: 25%;
+    background-color: #111111;
+    opacity: 0.25;
+    color: #FFFF;
+    height: 40px;
+    font-size: 22px;
 }

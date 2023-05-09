@@ -1,64 +1,78 @@
-body{
-    background-color: #CC0298;
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    height: 100vh;
-}
 .box{
-    width:420px;
-    height: 680px;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 50px 30px;
+    height: fit-content;
+    background-color: #FFFF;
+    margin-top: 5%;
 }
-.im{
-    width: 100px;
-    height: 100px;
+.close{
+    width:25px;
+    height: 25px;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+.logoini{
     border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    width: 48px;
+    height: 48px;
+    margin-left: calc(48%);
+    margin-bottom: 2%;
+    margin-top: 1%;
 }
-h1{
-    margin: 0;
-    padding: 0 0 10px;
+.titulo{
     text-align: center;
-    font-size: 22pt;
-    color:white;
+    font-size: 32px;
+    color:#333333 !important;
+    margin-bottom: 2%;
 }
-label{
-    margin: 0;
-    padding: 0;
-    font-size: 14pt;
-    display: block;
-    color: white;
+.aviso{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #333333;
+    font-size: 16px;
 }
-.input1{
-    width: 100%;
-    margin-bottom: 14px;
+.colum{
+    margin-left: 35%;
+    margin-right: -5%;
 }
-.input2{
-    margin-bottom: 10px;
+.a1{
+    color: #333333 !important;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-input[type="text"], input[type="password"]{
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    outline: none;
-    height: 20px;
-    color: white;
-    font-size: 12pt;
+.a1:hover{
+    background-color: #d8d5d5;
 }
-input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 30px;
-    background-color: #CC0298;
-    font-size: 12pt;
-    border-radius: 20px;
+.username{
+    color: #666666 !important;
+    font-size: 16px;
+    margin-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.password{
+    color: #666666 !important;
+    font-size: 16px;
+    margin-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.texto{
+    margin-left: 25%;
+    border-color: #d8d5d5;
+    width: 33rem;
+    background-color: #FFFF;
+}
+.contrase{
+    margin-left: 25%;
+    border-color:#d8d5d5;
+    width: 33rem;
+    background-color: #FFFF;
+}
+.olvido{
+    margin-left: 50%;
+}
+.button{
+    width: 33rem;
+    margin-left: 25%;
+    background-color: #111111;
+    opacity: 0.25;
+    color: #FFFF;
+    height: 40px;
+    font-size: 22px;
 }

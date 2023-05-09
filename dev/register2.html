@@ -2,8 +2,8 @@
 
 <html lang="es"> 
     <head> 
-        <title>Inicia Sesión</title>
-        <link href="login-style.css" rel="stylesheet">
+        <title>Registro</title>
+        <link href="register-style.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,34 +17,26 @@
             <div class="box container">
                 <a href="#" onclick="javascript:window.history.back(-1);return false;"><img src="/images/x.svg" class="close"></a>
                 <img src="/images/WIP Company Logo.png" class="logoini">
-                <h1 class="titulo">Inicia Sesión</h1>
+                <h1 class="titulo">Crea una Cuenta</h1>
                 <div class="row">
                     <div class="colum col-3">
-                        <h4 class="aviso">¿No tienes una cuenta?</h4>
+                        <h4 class="aviso">¿Ya tienes una cuenta?</h4>
                     </div>
                     <div class="col-3">
-                        <a href="/dev/register.html" class="a1"><strong>Regístrate</strong></a>
+                        <a href="/dev/login.html" class="a1"><strong>Inicia Sesión</strong></a>
                     </div>
                 </div>
+                
                 <form>
                     <div class="d-flex flex-column mb-3">
                         <div class="p-2">
-                            <label for="nombre de usuario" class="username">Nombre de Usuario</label>
+                            <label for="nombre de usuario" class="username">¿Cuál es tu nombre de usuario?</label>
                         </div>
                         <div class="p-2">
-                            <input type="text" class="texto" required>
+                            <input type="text" class="texto" placeholder="Ingrese su nombre de usuario" required>
                         </div>
                         <div class="p-2">
-                            <label for="password" class="password">Contraseña</label>
-                        </div>
-                        <div class="p-2">
-                            <input type="password" class="contrase" required>
-                        </div>
-                        <div class="p-2">
-                            <a href="#" class="a1 olvido"><strong>¿Olvidaste tu contraseña?</strong></a>
-                        </div>
-                        <div class="p-2">
-                            <input type="submit" value="Ingresa" class="button">
+                            <input type="button" value="Ingresa" class="button" onclick="window.location.href='/dev/register3.html'">
                         </div>
                     </div>
                 </form>

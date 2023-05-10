@@ -17,7 +17,7 @@
             <div class="box container">
                 <a href="#" onclick="javascript:window.history.back(-1);return false;"><img src="/images/x.svg" class="close"></a>
                 <img src="/images/WIP Company Logo.png" class="logoini">
-                <h1 class="titulo">AAAAAAAAAAAAAAAAAAAA</h1>
+                <h1 class="titulo">Crea una cuenta</h1>
                 <div class="row">
                     <div class="colum col-3">
                         <h4 class="aviso">¿Ya tienes una cuenta?</h4>
@@ -29,21 +29,71 @@
                 
                 <form>
                     <div class="d-flex flex-column mb-3">
-                        <div class="p-2">
-                            <label for="nombre de usuario" class="username">¿Cuál es tu nombre de usuario?</label>
+                        <div class="p-1">
+                            <h1 class="secondtitle"><strong> 2. Información básica</strong></h1>
                         </div>
                         <div class="p-2">
-                            <input type="text" class="texto" placeholder="Ingrese su nombre de usuario" id="username">
+                            <label for="nombre completo" class="nombre">Nombre</label>
                         </div>
                         <div class="p-2">
-                            <a class="btn btn-primary btn-lg"role="button" onclick="checkingInfo()">Siguiente</a>
+                            <input type="text" class="texto" placeholder="Ingresa tu nombre completo" id="nombre">
+                        </div>
+                        <div class="p-2">
+                            <label for="apellidos" class="nombre">Apellidos</label>
+                        </div>
+                        <div class="p-2">
+                            <input type="text" class="texto" placeholder="Ingresa tus apellidos" id="apellidos">
+                        </div>
+                        <div class="p-2">
+                            <label for="username" class="nombre">Nombre de Usuario</label>
+                        </div>
+                        <div class="p-2">
+                            <input type="text" class="texto" placeholder="Ingresa tu nuevo nombre de usuario" id="user">
+                        </div>
+                        <div class="row">
+                            <div class="c col">
+                                <div class="p-2">
+                                    <label for="genero" class="nombre">Género</label>
+                                </div>
+                                <div class="p-2">
+                                    <input class="gender" list="datalistOptions" id="list" placeholder="Escoge tu género">
+                                    <datalist id="datalistOptions">
+                                        <option value="Masculino">
+                                        <option value="Femenino">
+                                        <option value="Otro">
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-2">
+                                    <label for="fecha" class="nombre2">Fecha de Nacimiento</label>
+                                </div>
+                                <div class="p-2">
+                                    <input type="date" class="date" id="yourdate" min="1920-01-01" max="2023-12-31">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="c1 col">
+                                <div class="p-2">
+                                    <a class="button2 btn btn-primary btn-lg"role="button" href="/dev/register.html">Regresar</a>
+                                </div>
+                            </div>
+                            <div class="c2 col">
+                                <div class="p-2">
+                                    <a class="button2 btn btn-primary btn-lg"role="button" onclick="checkingInfo()">Siguiente</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
+            
                 <script>
                     function checkingInfo(){
-                        var data = document.getElementById("username").value;
-                        if(data == ""){
+                        var data1 = document.getElementById("nombre").value;
+                        var data2 = document.getElementById("apellidos").value;
+                        var data3 = document.getElementById("user").value;
+                        if(data1 == "" || data2 == "" || data3 == ""){
                             alert("Por favor complete los campos");
                         }else{
                             window.location.href="/dev/register3.html"

@@ -1,32 +1,29 @@
 function getInfo(){
-    var username = "Delphine"/*document.getElementById("username").value*/;
-    var password = ""/*document.getElementById("password").value*/;
+    var username = "Cecilio"/*document.getElementById("username").value*/;
+    var password = "Cecilio1"/*document.getElementById("password").value*/;
     return {username, password};
 }
 
-async function loginData(url = "https://jsonplaceholder.typicode.com/users", data = {}){
-    //url
-    const url = 'https://httpbin.org/post'
-    //informacion del cuerpo de la request
-    const data = getInfo();
-    const customHeaders = {
-        "Content-Type": "application/json",
-    }
+async function loginData(url = "http://localhost:3002/user/", data = {}){
+    data = getInfo();
+
+    url += `${data.username}/${data.password}`
+    
     fetch(url, {
-        method: "POST",
-        headers: customHeaders,
-        body: JSON.stringify(data),
+        method: "GET"
     })
     .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
+    .then((res) => {
+        console.log(res);
+        const token = res;
+        return token;
     })
     .catch((error) => {
         //indicar que no se pudo hacer el login
-    })
-    const token = await response;
-    return token;
+        console.log(error);
+        return -1;
+    });
 }
 
 
-
+loginData();

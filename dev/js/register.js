@@ -1,28 +1,33 @@
-const registerURL = "";
+const registerURL = "http://localhost:3002/user/register";
 
-const usernameURL = "";
-const emailURL = "";
+const checkDataURL = "http://localhost:3002/user/check";
 
-var isPasswordAcceptable = false;
-var isEmailAcceptable = false;
-var isUsernameAcceptable = false;
+var isPasswordAcceptable = true;
+var isEmailAcceptable = true;
+var isUsernameAcceptable = true;
 
 //para funcionamiento correcto hacer llamados en funcion de eventos pero con intervalos fijos de tiempo entre peticiones
-
+register()
 async function register(){
     if(isPasswordAcceptable && isEmailAcceptable && isUsernameAcceptable){
         user = getInfo();
         customHeaders = {
-
+            "Content-type": "application/json; charset=UTF-8"
         };
 
-        fetch(url, {
+        fetch(registerURL, {
             method: "POST",
             headers: customHeaders,
             body: JSON.stringify(user),
         })
-        .then((response) => response.stringify())
+        .then((response) => response.json())
         .then((data) => {
+            console.log(data);
+            if(data.error){//si existe el campo error no se pudo registrar al usuario
+                console.log("no se pudo registrar al usuario");
+            } else {
+                console.log("registro exitoso");
+            }
             //revisar si la respuesta fue buena
         })
         .catch((error) => {
@@ -34,16 +39,16 @@ async function register(){
 }
 
 function getInfo(){
-    let username = ""/*document.getElementById("username").value*/;
-    let password = ""/*document.getElementById("password").value*/;
-    let email = ""/*document.getElementById("email").value*/;
-    let primerNombre = ""/*document.getElementById("email").value*/;
-    let segundoNombre = ""/*document.getElementById("email").value*/;
-    let apellidos = ""/*document.getElementById("email").value*/;
-    let idGenero = ""/*document.getElementById("email").value*/;
-    let fechaNacimiento = ""/*document.getElementById("email").value*/;
+    let username = "Daniel"/*document.getElementById("username").value*/;
+    let password = "Daniel1"/*document.getElementById("password").value*/;
+    let correo = "daniel@gmail.com"/*document.getElementById("email").value*/;
+    let primer_nombre = "Daniel"/*document.getElementById("email").value*/;
+    let segundo_nombre = "Daniel"/*document.getElementById("email").value*/;
+    let apellidos = "Daniel"/*document.getElementById("email").value*/;
+    let genero = "M"/*document.getElementById("email").value*/;
+    let fecha_nacimiento = "2003-05-23"/*document.getElementById("email").value*/;
 
-    return {username, password, email, primerNombre, segundoNombre, apellidos, idGenero, fechaNacimiento};
+    return {username, password, correo, primer_nombre, segundo_nombre, apellidos, genero, fecha_nacimiento};
 }
 
 function checkNull(data, element){
@@ -55,36 +60,36 @@ function checkNull(data, element){
 
 //revisar si el usuario cumple con los requisitos y no esta repetido
 async function checkUsername(){
-    let username = ""/*document.getElementById("username").value*/;
-    let customHeaders = {
-        "Content-type" : "application/json; charset=UTF-8"
-    };
+    let username = "Cecilio"/*document.getElementById("username").value*/;
+
     
-    if (password.length > 50)//usuario muy largo
+    if (username.length > 50)//usuario muy largo
         return false;
 
     //verificacion de si el usuario esta repetido
-    fetch(usernameURL, {
+    fetch(checkDataURL, {
         method: "POST",
-        headers: customHeaders,
-        body: JSON.stringify(username),
+        body: JSON.stringify({
+            username: username
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
     })
-    .then((response) => response.stringify())
+    .then((response) => response.json())
     .then(response => {
-        if(response.keys(obj).length == 0)
+        if(response.length == 0)//significa que este dato no existe ya en la base de datos
             isUsernameAcceptable = true;
         else 
             isUsernameAcceptable = false;
+        
     }).catch((error) => {
         console.log(error)
     })
 }
 
 async function checkEmail(){
-    let email = ""/*document.getElementById("email").value*/;
-    let customHeaders = {
-        "Content-type" : "application/json; charset=UTF-8"
-    }
+    let correo = "daniel@gmail.com"/*document.getElementById("email").value*/;
     //verificacion de si es un correo
     //^: inicio del string
     //\w: cualquier letra [Aa-Zz], numero [0-9] o guion bajo [_]
@@ -95,27 +100,31 @@ async function checkEmail(){
     //\.: el caracter "."
     //{a,b}: minimo a, maximo b de lo anterior, siendo a y b enteros y a < b
     //$: final del string
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo)){
         isEmailAcceptable = false;
         return;//no es un email
     } 
     
     //verificacion de si el usuario esta repetido
-    fetch(emailURL, {
+    fetch(checkDataURL, {
         method: "POST",
-        headers: customHeaders,
-        body: JSON.stringify(email),
+        body: JSON.stringify({
+            correo: correo
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
     })
-    .then((response) => response.stringify())
+    .then((response) => response.json())
     .then(response => {
-        if(response.keys(obj).length == 0)
+        if(response.length == 0)//significa que este dato no existe ya en la base de datos
             isEmailAcceptable = true;
         else 
             isEmailAcceptable = false;
+        console.log(isEmailAcceptable);
     }).catch((error) => {
         console.log(error)
     })
-    
 }
 
 //revisar si la contraseña cumple con los requisitos

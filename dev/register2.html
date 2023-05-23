@@ -93,7 +93,9 @@
                         var data1 = document.getElementById("nombre").value;
                         var data2 = document.getElementById("apellidos").value;
                         var data3 = document.getElementById("user").value;
-                        if(data1 == "" || data2 == "" || data3 == ""){
+                        var data4 = document.getElementById("list").value;
+                        var data5 = document.getElementById("yourdate").value;
+                        if(data1 === "" || data2 === "" || data3 === "" || data4 ==="" || data5 ===""){
                             alert("Por favor complete los campos");
                         }else{
                             window.location.href="/dev/register3.html"

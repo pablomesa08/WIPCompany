@@ -60,9 +60,9 @@
                     function checkingInfo(){
                         var data1 = document.getElementById("con1").value;
                         var data2 = document.getElementById("con2").value;
-                        if(data1 != data2){
+                        if(data1 != data2 && data2 !=""){
                             alert("Las contraseñas no coinciden, intente nuevamente");
-                        }else if(data1 == "" || data2 == ""){
+                        }else if(data1 === "" || data2 === ""){
                             alert("Por favor complete los campos");
                         }else{
                             window.location.href="/dev/inicio.html"

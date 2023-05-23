@@ -64,6 +64,7 @@ do {
 */
 
 let username = "PON ACA LA VARIABLE GLOBAL DEL USERNAME";
+
 const textarea = document.querySelector('#textarea')
 const submitBtn = document.querySelector('#submitBtn')
 const commentBox = document.querySelector('.comment__box')

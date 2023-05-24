@@ -4,25 +4,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.use(express.static('public'))
+
+app.listen(port, () => {
+    console.log(`listening on port ${port}`)
+})
 /*
-//DB CONNECTION
-const mongoose = require('mongoose')
-const url = 'mongodb://localhost:27017/'
-
-mongoose.connect(url, {
-   useNewUrlParser: true,
-    userUnifiedTopology: true,
-    useFindAndModify: true
-})
-
-const connection = mongoose.connection
-connection.once('open', function(){
-    console.log('database connected')
-})
-*/
-
-
-
 const dbConnect = require('./db')
 dbConnect()
 const Comment = require('./models/comment')
@@ -65,4 +51,4 @@ io.on('connection', (socket) => {
     socket.on('typing', (data) => {
         socket.broadcast.emit('typing', data) 
     })
-})
+})*/

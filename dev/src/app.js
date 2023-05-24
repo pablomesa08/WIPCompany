@@ -99,15 +99,15 @@ function appendToDom(data) {
 
     let markup = `
                         <div class="card border-light mb-3">
-                            <div class="card-body">
-                                <h6>${data.username}</h6>
-                                <p>${data.comment}</p>
-                                <div>
-                                    <img src="/img/clock.png" alt="clock">
-                                    <small>${moment(data.time).format('LT')}</small>
+                                    <div class="card-body">
+                                        <h5>${data.userID}</h5>
+                                        <p>${data.comment}</p>
+                                        <div>
+                                            <img src="/images/clock.png" alt="clock">
+                                            <small>${moment(data.time).format('LT')}</small>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
     `
     lTag.innerHTML = markup
 

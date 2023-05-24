@@ -1,4 +1,4 @@
-const content_aports = document.getElementById('seccion_aportes');
+/*const content_aports = document.getElementById('seccion_aportes');
 const endpointComentario = "https://mocki.io/v1/c8160c17-9ac9-4a8b-b1ea-0d6dc85ab9b3"
 
 function getJson(endpoint) {
@@ -44,3 +44,4 @@ async function fetchData() {
 fetchData();
 
 //necesito una funcion POST para enviar el comentario de la persona al backend, para ello en el POST van a haber las cookies y el comentario de la persona
+*/
